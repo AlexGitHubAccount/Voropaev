@@ -211,11 +211,13 @@ button{
     background: url(../img/start/1300/photo2.png) no-repeat;
 }
 .bestOffer__content__title,
-.newArrivals__content__title{
+.newArrivals__content__title,
+.catalog__content__title{
     font: .875em RobotoBold, sans-serif;
 }
 .bestOffer__content__price,
-.newArrivals__content__price{
+.newArrivals__content__price,
+.catalog__content__price{
     font: .875em RobotoRegular, sans-serif;
 }
 .bestOffer__content__symbol{
@@ -254,7 +256,8 @@ button{
 
 .bestOffer__content__total__bag-button:hover,
 .bestOffer__bag-button:hover,
-.newArrivals____button:hover{
+.newArrivals____button:hover,
+.catalog____button:hover{
     border: 1px solid #f14a58;
     color: #f14a58;
 }
@@ -263,46 +266,65 @@ button{
     display: none;
     margin: 65px auto 0;
 }
-
-.newArrivals{
+.newArrivals,
+.catalog{
     max-width: 1180px;
     margin: 100px auto;
     text-align: center;
+}
+.catalog{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.catalog__sale-info{
+    margin: 0 auto;
+    width: 100%;
+}
+.catalog__sale-info__heading{
+    font: 1.55em OpenSans, sans-serif;  
+}
+.catalog__sale-info__text{
+    font: italic 1em 'Times New Roman', Times, serif;
 }
 .newArrivals__heading{
     font: 2.85em OpenSans, sans-serif;    
 }
 .newArrivals__content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin: 90px 0 60px;
 }
-.newArrivals__product__wrapper{
+.newArrivals__product__wrapper,
+.catalog__product__wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width:25%;
     position: relative;
 }
-.newArrivals__product__wrapper:hover {
+.newArrivals__product__wrapper:hover,
+.catalog__product__wrapper:hover {
     cursor: url(../img/start/1300/cursor.png), auto;
 }
-.newArrivals__product__wrapper:hover .newArrivals__content__title{
+.newArrivals__product__wrapper:hover .newArrivals__content__title,
+.catalog__product__wrapper:hover .catalog__content__title{
     color: #f14a58;
 }
-.newArrivals__product__image--filter{
+.newArrivals__product__image--filter,
+.catalog__product__image--filter{
     display: none;
     position: absolute;
     top: 0;
     left: 0;
 }
-.newArrivals__product__wrapper:hover .newArrivals__product__image--filter{
+.newArrivals__product__wrapper:hover .newArrivals__product__image--filter,
+.catalog__product__wrapper:hover .catalog__product__image--filter{
     display: block;
 }
 
 
-.newArrivals__content__image__new {
+.newArrivals__content__image__new,
+.catalog__content__image__new {
     position: absolute;
     top: 17px;
     left: 0;
@@ -313,14 +335,17 @@ button{
     color: #fff;
     font: 0.75em RobotoMedium, sans-serif;
 }
-.newArrivals____button{
+.newArrivals____button,
+.catalog____button{
     width: 29%;
     height: 75px;
     border: 1px solid #e5e5e5;
     background-color: #fff;
     font: 1.125em OpenSans, sans-serif;
 }
-
+.catalog__button__wrapper{
+    width: 100%;
+}
 .footer{
     max-width: 1440px;
     margin: 0 auto;
@@ -466,6 +491,7 @@ button{
     }
     .bestOffer,
     .newArrivals,
+    .catalog,
     .footer__share{
         max-width: 690px;
     }
@@ -491,8 +517,26 @@ button{
     }
     .bestOffer__content__image__wrapper,
     .bestOffer__content__total__wrapper,
-    .newArrivals__product__image__wrapper {
+    .newArrivals__product__image__wrapper,
+    .catalog__product__image__wrapper {
         transform: scale(.75);
+    }
+    .catalog__product__wrapper{
+        max-width: 30%;
+    }
+    .catalog__product__wrapper{
+        order: 4;
+    }
+    .catalog__button__wrapper{
+        order: 4;
+    }
+    .catalog__product__wrapper:first-child,
+    .catalog__product__wrapper:nth-child(2),
+    .catalog__product__wrapper:nth-child(3){
+        order: 1;
+    }
+    .catalog__sale-info{
+        order: 2;
     }
     .bestOffer__content__angle {
         margin: 70px 0 0;
@@ -500,13 +544,15 @@ button{
     .newArrivals__product__wrapper:last-child {
         display: none;
     }
-    .newArrivals____button{
+    .newArrivals____button,
+    .catalog____button{
         width: 45%;
     }
     .newArrivals__content {
         margin: 40px 0 60px;
     }
-    .newArrivals__content__title{
+    .newArrivals__content__title,
+    .catalog__content__title{
         margin: 0 0 10px;
     }
     .footer{
@@ -560,7 +606,7 @@ button{
         max-width: 375px;
     }
     .header{
-        min-width: 335px;
+        max-width: 335px;
         align-items: center;
         margin-top: 0;
     }    
@@ -618,7 +664,9 @@ button{
     }
     .bestOffer,
     .newArrivals,
-    .footer__share{
+    .catalog,
+    .footer__share,
+    .footer__info{
         max-width: 335px;
     }
     .bestOffer__heading,
@@ -646,10 +694,14 @@ button{
     }
     .bestOffer__content__image__wrapper,
     .bestOffer__content__total__wrapper,
-    .newArrivals__product__image__wrapper {
+    .newArrivals__product__image__wrapper,
+    .catalog__product__image__wrapper {
         transform: none;
         width: 155px;
         height: 230px;
+    }
+    .catalog__product__wrapper {
+        max-width: 45%;
     }
     .bestOffer__content__image__wrapper--first,
     .bestOffer__content__image__wrapper--second {
@@ -659,7 +711,8 @@ button{
         display: none;
     }
     .bestOffer__bag-button,
-    .newArrivals____button {
+    .newArrivals____button,
+    .caatlog____button {
         margin: 0 auto;
         width: 75%;
     }
@@ -670,19 +723,23 @@ button{
         top: 30px;
         left: none;
     }
-    .newArrivals__content{
+    .newArrivals__content,
+    .catalog{
         justify-content: space-between;
     }
+    .newArrivals__product__wrapper,
     .newArrivals__product__wrapper{
         max-width: 45%;
     }
     .newArrivals__product__wrapper:nth-child(3n){
         display: none;
     }
-    .newArrivals__product__image{
+    .newArrivals__product__image,
+    .catalog__product__image{
         max-width: 100%;
     }
-    .newArrivals__product__image--filter{
+    .newArrivals__product__image--filter,
+    .catalog__product__image--filter{
         width: inherit;
         left: auto;
     }
