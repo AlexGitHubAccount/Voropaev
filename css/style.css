@@ -141,25 +141,60 @@ button{
     background: url(../img/start/1300/nikeRed.png) no-repeat bottom;
     
 }
-
+.banners__content--adidas {
+    background: url(../img/catalog/adidas.png) no-repeat bottom;
+    
+}
 .banners__content--caps {
     background: #f7f7f7 url(../img/start/1300/caps&hats.png) no-repeat;
     background-position-y: -60px;
 }
+.banners__content--repair,
+.banners__content--bag{
+    width: 25%;
+}
+.banners__content--bag{
+    background: #f7f7f7 url(../img/catalog/bag.png) center no-repeat;   
+}
+.banners__content--repair{
+    background: #c9cbcd url(../img/catalog/repair.png) center no-repeat;
+}
 
+.banners__content__title--bag{
+    color: #f14a58;
+}
 .banners__content__text__container {
     position: absolute;
     text-align: center;
     top: 8%;
     right: 16%;
 }
+.banners__content__text__container--low{
+    top: 70%;
+    width: 100%;
+    right: auto;
+    color: #fff;
+}
+.banners__content__title--center{
+    margin: 0 auto;
+}
 .banners__content__title{
     font: 1.75em OpenSans, sans-serif;
     margin-bottom: 0px;
 }
-.banners__content__sale{
+.banners__content--adidas .banners__content__title{
+    color: #fff;
+}
+.banners__content--adidas .banners__content__text__container{
+    right: 10%;
+}
+.banners__content__sale,
+.banners__content__text{
     font:italic 1em 'Times New Roman', Times, serif;
     color: #757575;
+}
+.banners__content__text{
+    color: #fff;
 }
 .bestOffer{
     max-width: 1180px;
@@ -214,6 +249,10 @@ button{
 .newArrivals__content__title,
 .catalog__content__title{
     font: .875em RobotoBold, sans-serif;
+    max-width: 80%;
+}
+.catalog__product__wrapper{
+    margin-bottom: 70px;
 }
 .bestOffer__content__price,
 .newArrivals__content__price,
@@ -236,10 +275,22 @@ button{
     font: 1.375em RobotoRegular, sans-serif;
     color: #757575;
 }
-.bestOffer__content__total__old__strikeout{
+.catalog__content__price__old{
+    position: relative; 
+    font: 1em RobotoRegular, sans-serif;
+    color: #757575;
+    margin-right: 5px;
+}
+.bestOffer__content__total__old__strikeout,
+.catalog__content__price__old__strikeout{
     position: absolute;
     top: -12px;
     left: 0;
+}
+.catalog__content__price__old__strikeout{    
+    transform: scale(.6);
+    top: -20px;
+    left: -20px;
 }
 .bestOffer__content__total__new{
     font: 2em RobotoBold, sans-serif;
@@ -279,7 +330,7 @@ button{
     justify-content: space-between;
 }
 .catalog__sale-info{
-    margin: 0 auto;
+    margin: 0px auto 50px;
     width: 100%;
 }
 .catalog__sale-info__heading{
@@ -315,7 +366,7 @@ button{
     display: none;
     position: absolute;
     top: 0;
-    left: 0;
+    left: auto;
 }
 .newArrivals__product__wrapper:hover .newArrivals__product__image--filter,
 .catalog__product__wrapper:hover .catalog__product__image--filter{
@@ -409,7 +460,11 @@ button{
 .footer__info__contact__social__link{
     margin-right: 20px;
 }
-.footer__share{
+.footer__info__contact__social__link:hover{
+    text-decoration: none;
+}
+.footer__share,
+.filters{
     max-width: 1180px;
     margin: 0 auto;
     display: flex;
@@ -456,17 +511,29 @@ button{
     height: 1px;
     margin: 0 auto;
 }
-
 @media screen and (max-width: 1024px ){
     .body {
         max-width: 768px;
     }
     .header__menu__search{
-        width: 10%;
+        width: 0%;
         border: none;
     }
     .header__menu__search__input{
         display: none;
+    }
+    .header__menu__search__input--visible{
+        display: block;
+    }
+    .header__menu__search--tablet {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        right: 10%;
+        width: 30%;
+        height: 40px;
+        border-bottom: 2px solid #e5e5e5;
+        box-shadow: -15px 5px 10px #fff;
     }
     .header__menu__list{
         font-size: 0.75em;
@@ -489,6 +556,20 @@ button{
         background-position-y: -40px;
         background-size: 60%;
     }
+    .banners__content--adidas{
+        background-size: cover;
+        background-position: top;
+        width: 67%;
+    }
+    
+    .banners__content--repair{
+        width: 33%;
+        background-size: 70%;
+    }
+    .banners__content--bag{
+        display: none;
+    }
+    .header,
     .bestOffer,
     .newArrivals,
     .catalog,
@@ -515,6 +596,7 @@ button{
     .bestOffer__bag-button{
         display: block;
     }
+    
     .bestOffer__content__image__wrapper,
     .bestOffer__content__total__wrapper,
     .newArrivals__product__image__wrapper,
@@ -537,6 +619,16 @@ button{
     }
     .catalog__sale-info{
         order: 2;
+        max-width: 80%;
+        
+    }
+    .catalog__sale-info__heading{
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+    .catalog__sale-info__text{
+        font-size: 1em;
+        line-height: 2em;
     }
     .bestOffer__content__angle {
         margin: 70px 0 0;
@@ -550,6 +642,8 @@ button{
     }
     .newArrivals__content {
         margin: 40px 0 60px;
+        display: flex;
+        justify-content: space-between;
     }
     .newArrivals__content__title,
     .catalog__content__title{
@@ -659,8 +753,18 @@ button{
     .header__login-bag__logo--mobile{
         display: block;
     }
-    .banners__content--nike{
+    .banners__content--nike,
+    .banners__content--adidas{
         width: 100%;
+    }
+    .banners__content__title{
+        font-size: 1.3em;
+    }
+    .banners__content__text{
+        font-size: 0.9em;
+    }
+    .banners__content--repair{
+        display: none;
     }
     .bestOffer,
     .newArrivals,
@@ -700,8 +804,24 @@ button{
         width: 155px;
         height: 230px;
     }
+    .bestOffer__content__title,
+    .newArrivals__content__title,
+    .catalog__content__title{
+        min-width: 100%;
+    }
     .catalog__product__wrapper {
         max-width: 45%;
+    }
+    .catalog__product__wrapper:nth-child(3){
+        order: 4;
+    }
+    .catalog__sale-info__heading{
+        font-size: 1.15em;
+        line-height: 1.5em;
+    }
+    .catalog__sale-info__text{
+        font-size: 0.9em;
+        line-height: 2em;
     }
     .bestOffer__content__image__wrapper--first,
     .bestOffer__content__image__wrapper--second {
@@ -726,6 +846,9 @@ button{
     .newArrivals__content,
     .catalog{
         justify-content: space-between;
+    }
+    .catalog{
+        margin-top: 10px;
     }
     .newArrivals__product__wrapper,
     .newArrivals__product__wrapper{

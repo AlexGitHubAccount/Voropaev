@@ -22,9 +22,9 @@
                     <p class="header__login-bag__bag__text">Bag (0)</p>
                 </a>
             </div>
-            <div class="header__burger">&#8801;</div>
+            <div id = "header__burger" class="header__burger">&#8801;</div>
         </section>
-        <nav class="header__menu">
+        <nav id = "header__menu" class="header__menu">
             <ul class="header__menu__list">
                 <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="#">Women</a>
                 </li>
@@ -43,11 +43,11 @@
                 <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="#">Store
                         Locator</a></li>
             </ul>
-            <form action="" class="header__menu__search">
-                <input type="search" placeholder="Style Name" class="header__menu__search__input">
-                <button type="submit" class="header__menu__search__button">
+            <form action="" id = "header__menu__search" class="header__menu__search">
+                <input type="search" placeholder="Style Name" id = "header__menu__search__input" class="header__menu__search__input header__menu__search__input--tablet">
+                <a class="header__menu__search__button" id = "header__menu__search__button">
                     <img src="img/start/1300/search_ico.png" alt="search-icon">
-                </button>
+                </a>
             </form>
         </nav>
     </header>
@@ -57,7 +57,7 @@
                 <p class="banners__content__title"> Nike Red</p>
             </div>
         </a>
-        <a href="#" class="banners__content banners__content--caps">
+        <a href="catalog.html" class="banners__content banners__content--caps">
             <div class="banners__content__text__container">
                 <p class="banners__content__title">Caps & Hats</p>
                 <p class="banners__content__sale">Sale -50%</p>
@@ -148,7 +148,7 @@
                 <p class="newArrivals__content__price">£80.60</p>
             </div>
         </div>
-        <button class="newArrivals____button">All arrivals</button>
+        <a href="catalog.html"><button class="newArrivals____button">All arrivals</button></a>
     </section>
 
     <footer class="footer">
@@ -217,6 +217,7 @@
         </section>
 
     </footer>
+    <script src="js/start.js"></script>
 </body>
 
 </html>

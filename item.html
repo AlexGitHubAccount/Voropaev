@@ -4,8 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item details page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/item.css">
 </head>
-<body>
-    
+<body class="body">
+    <header class="header">
+        <section class="header__login-bag">
+            <h1 class="header__login-bag__logo">Template</h1>
+            <h1 class="header__login-bag__logo--mobile">TL</h1>
+            <div class="header__login-bag__wrapper">
+                <a href="#" class="header__login-bag__login">E-mail sing up</a>
+                <a href="#" class="header__login-bag__bag__wrapper">
+                    <img class="header__login-bag__bag__icon" width="12" height="12" alt="bag-icon"
+                        src="img/start/1300/ico_bag.png">
+                    <p class="header__login-bag__bag__text">Bag (0)</p>
+                </a>
+            </div>
+            <div id = "header__burger" class="header__burger">&#8801;</div>
+        </section>
+        <nav id = "header__menu" class="header__menu">
+            <ul class="header__menu__list">
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="#">Women</a>
+                </li>
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="#">Men</a>
+                </li>
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link"
+                        href="#">Handbags</a></li>
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link"
+                        href="#">Accessories</a></li>
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="#">Sale</a>
+                </li>
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="#">New
+                        Arrivals</a></li>
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link"
+                        href="#">Clearance</a></li>
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="#">Store
+                        Locator</a></li>
+            </ul>
+            <form action="" id = "header__menu__search" class="header__menu__search">
+                <input type="search" placeholder="Style Name" id = "header__menu__search__input" class="header__menu__search__input header__menu__search__input--tablet">
+                <a class="header__menu__search__button" id = "header__menu__search__button">
+                    <img src="img/start/1300/search_ico.png" alt="search-icon">
+                </a>
+            </form>
+        </nav>
+    </header>
+    <div class="line__wrapper"></div>
+    <section class="item">
+        <div class="item__back">
+            <a href="catalog.html">&#60; Back to catalog</a>
+        </div>
+    </section>
+    <section class="banners">
+        <a href="#" class="banners__content banners__content--adidas">
+            <div class="banners__content__text__container">
+                <p class="banners__content__title"> Adidas blue</p>
+                <p class="banners__content__text"> For men</p>
+            </div>
+        </a>
+        <a href="#" class="banners__content banners__content--repair">
+            <div class="banners__content__text__container banners__content__text__container--low">
+                <p class="banners__content__title banners__content__title--center">Repair Patches</p>
+                <p class="banners__content__text banners__content__title--center">£150.50</p>
+            </div>
+        </a>        
+        <a href="#" class="banners__content banners__content--bag">
+            <div class="banners__content__text__container banners__content__text__container--low">
+                <p class="banners__content__title banners__content__title--bag banners__content__title--center">Sale</p>
+                <p class="banners__content__sale banners__content__title--center">-70%</p>
+            </div>
+        </a>
+    </section>
+    <footer class="footer">
+        <section class="footer__info">
+            <nav class="footer__links">
+                <ul class="footer__links__list">
+                    <h4 class="footer__links__list__heading">Quick Links</h4>
+                    <li class="footer__links__list__element"><a href="#">Store locator</a></li>
+                    <li class="footer__links__list__element"><a href="#">Gift cards</a></li>
+                    <li class="footer__links__list__element"><a href="#">Size guide</a></li>
+                    <li class="footer__links__list__element"><a href="#">About us</a></li>
+                    <li class="footer__links__list__element"><a href="#">Support</a></li>
+                </ul>
+                <ul class="footer__links__list">
+                    <h4 class="footer__links__list__heading">Customer Care</h4>
+                    <li class="footer__links__list__element"><a href="#">Customer service</a></li>
+                    <li class="footer__links__list__element"><a href="#">Track my order</a></li>
+                    <li class="footer__links__list__element"><a href="#">Return policy</a></li>
+                    <li class="footer__links__list__element"><a href="#">Shipping & delivery</a></li>
+                    <li class="footer__links__list__element"><a href="#">Contuct us</a></li>
+                    <li class="footer__links__list__element"><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <div class="footer__info__contact">
+                <div class="footer__info__contact__wrapper">
+                    <ul class="footer__info__contact__list">
+                        <h4 class="footer__info__contact__list__heading">Questions</h4>
+                        <li class="footer__info__contact__list__element">Tweet us <span
+                                class="footer__info__contact__list__element__id">@template</span></li>
+                    </ul>
+                    <ul class="footer__info__contact__list">
+                        <h4 class="footer__info__contact__list__heading">Order by phone</h4>
+                        <li class="footer__info__contact__list__element">8-800-409-47-12</li>
+                    </ul>
+                </div>
+                <p class="footer__info__contact__delivery">We have our own delivery service which operates in 23 major
+                    European cities. Delivery time - 3-5 days.</p>
+
+                <div class="footer__info__social__link__wrapper">
+                    <ul class="footer__share__list--mobile">
+                        <li class="footer__share__list__element"><a href="#">Legal notice</a></li>
+                        <li class="footer__share__list__element"><a href="#">Privacy policy</a></li>
+                        <li class="footer__share__list__element"><a href="#">Site map</a></li>
+                    </ul>
+                    <a class="footer__info__contact__social__link" href="#">
+                        <img src="img/start/1300/fb.png" alt="facebook-ico">
+                    </a>
+                    <a class="footer__info__contact__social__link" href="#">
+                        <img src="img/start/1300/twi.png" alt="twitter-ico">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <section class="footer__share">
+            <p class="footer_share__copyright">© 2010–2015, The Template Group inc.</p>
+            <div class="footer_share__wrapper">
+                <h3 class="footer_share__share">Share</h3>
+                <p class="footer_share__counter">1 437</p>
+            </div>
+            <ul class="footer__share__list">
+                <li class="footer__share__list__element"><a href="#">Legal notice</a></li>
+                <li class="footer__share__list__element"><a href="#">Privacy policy</a></li>
+                <li class="footer__share__list__element"><a href="#">Site map</a></li>
+            </ul>
+        </section>
+        <script src="js/start.js"></script>
+    </footer>
 </body>
 </html>

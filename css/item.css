@@ -1,0 +1,14 @@
+.item{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.item__back{
+    font: 1em OpenSans, sans-serif;
+    padding: 25px 0;
+}
+.item__content__wrapper{
+    display: flex;
+}
+.item__content{
+    width: 50%;
+}
