@@ -284,7 +284,8 @@ button {
 }
 
 .bestOffer__content__price, 
-.newArrivals__content__price, .catalog__content__price {
+.newArrivals__content__price,
+.catalog__content__price {
     font: .875em RobotoRegular, sans-serif;
 }
 
@@ -403,18 +404,21 @@ button {
     cursor: url(../img/start/1300/cursor.png), auto;
 }
 
-.newArrivals__product__wrapper:hover .newArrivals__content__title, .catalog__product__wrapper:hover .catalog__content__title {
+.newArrivals__product__wrapper:hover .newArrivals__content__title,
+.catalog__product__wrapper:hover .catalog__content__title {
     color: #f14a58;
 }
 
-.newArrivals__product__image--filter, .catalog__product__image--filter {
+.newArrivals__product__image--filter, 
+.catalog__product__image--filter {
     display: none;
     position: absolute;
     top: 0;
     left: auto;
 }
 
-.newArrivals__product__wrapper:hover .newArrivals__product__image--filter, .catalog__product__wrapper:hover .catalog__product__image--filter {
+.newArrivals__product__wrapper:hover .newArrivals__product__image--filter,
+.catalog__product__wrapper:hover .catalog__product__image--filter {
     display: block;
 }
 
@@ -652,7 +656,10 @@ button {
     .bestOffer__bag-button {
         display: block;
     }
-    .bestOffer__content__image__wrapper, .bestOffer__content__total__wrapper, .newArrivals__product__image__wrapper, .catalog__product__image__wrapper {
+    .bestOffer__content__image__wrapper, 
+    .bestOffer__content__total__wrapper, 
+    .newArrivals__product__image__wrapper, 
+    .catalog__product__image__wrapper {
         transform: scale(.75);
     }
     .catalog__product__wrapper {
@@ -832,12 +839,17 @@ button {
     .bestOffer__content__angle:last-child {
         margin: 30px 0 0;
     }
-    .bestOffer__content__image__wrapper, .bestOffer__content__total__wrapper, .newArrivals__product__image__wrapper, .catalog__product__image__wrapper {
+    .bestOffer__content__image__wrapper,
+    .bestOffer__content__total__wrapper,
+    .newArrivals__product__image__wrapper,
+    .catalog__product__image__wrapper {
         transform: none;
         width: 155px;
         height: 230px;
     }
-    .bestOffer__content__title, .newArrivals__content__title, .catalog__content__title {
+    .bestOffer__content__title, 
+    .newArrivals__content__title, 
+    .catalog__content__title {
         min-width: 100%;
     }
     .catalog__product__wrapper {
@@ -854,13 +866,16 @@ button {
         font-size: 0.9em;
         line-height: 2em;
     }
-    .bestOffer__content__image__wrapper--first, .bestOffer__content__image__wrapper--second {
+    .bestOffer__content__image__wrapper--first, 
+    .bestOffer__content__image__wrapper--second {
         background-size: 100%;
     }
     .bestOffer__content__total__bag-button {
         display: none;
     }
-    .bestOffer__bag-button, .newArrivals____button, .caatlog____button {
+    .bestOffer__bag-button, 
+    .newArrivals____button, 
+    .caatlog____button {
         margin: 0 auto;
         width: 75%;
     }
@@ -871,22 +886,26 @@ button {
         top: 30px;
         left: none;
     }
-    .newArrivals__content, .catalog {
+    .newArrivals__content, 
+    .catalog {
         justify-content: space-between;
     }
     .catalog {
         margin-top: 10px;
     }
-    .newArrivals__product__wrapper, .newArrivals__product__wrapper {
+    .newArrivals__product__wrapper, 
+    .newArrivals__product__wrapper {
         max-width: 45%;
     }
     .newArrivals__product__wrapper:nth-child(3n) {
         display: none;
     }
-    .newArrivals__product__image, .catalog__product__image {
+    .newArrivals__product__image, 
+    .catalog__product__image {
         max-width: 100%;
     }
-    .newArrivals__product__image--filter, .catalog__product__image--filter {
+    .newArrivals__product__image--filter, 
+    .catalog__product__image--filter {
         width: inherit;
         left: auto;
     }
@@ -897,7 +916,8 @@ button {
     .footer__links, .footer__info__contact {
         width: 100%;
     }
-    .footer__links__list, .footer__info__contact__list {
+    .footer__links__list, 
+    .footer__info__contact__list {
         padding-left: 10px;
     }
     .footer__info__contact__list {
