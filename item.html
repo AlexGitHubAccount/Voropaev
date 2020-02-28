@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/item.css">
 </head>
+
 <body class="body">
     <header class="header">
         <section class="header__login-bag">
@@ -21,9 +23,9 @@
                     <p class="header__login-bag__bag__text">Bag (0)</p>
                 </a>
             </div>
-            <div id = "header__burger" class="header__burger">&#8801;</div>
+            <div id="header__burger" class="header__burger">&#8801;</div>
         </section>
-        <nav id = "header__menu" class="header__menu">
+        <nav id="header__menu" class="header__menu">
             <ul class="header__menu__list">
                 <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="#">Women</a>
                 </li>
@@ -42,9 +44,10 @@
                 <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="#">Store
                         Locator</a></li>
             </ul>
-            <form action="" id = "header__menu__search" class="header__menu__search">
-                <input type="search" placeholder="Style Name" id = "header__menu__search__input" class="header__menu__search__input header__menu__search__input--tablet">
-                <a class="header__menu__search__button" id = "header__menu__search__button">
+            <form action="" id="header__menu__search" class="header__menu__search">
+                <input type="search" placeholder="Style Name" id="header__menu__search__input"
+                    class="header__menu__search__input header__menu__search__input--tablet">
+                <a class="header__menu__search__button" id="header__menu__search__button">
                     <img src="img/start/1300/search_ico.png" alt="search-icon">
                 </a>
             </form>
@@ -54,6 +57,61 @@
     <section class="item">
         <div class="item__back">
             <a href="catalog.html">&#60; Back to catalog</a>
+        </div>
+        <div class="line__wrapper"></div>
+        <div class="item__content__wrapper">
+            <div class="item__content">
+                <div class="item__content__preview">
+                    <img src="img/item/full.png" title="Dark classic fit suit" alt="Dark classic fit suit"
+                        class="item__content__img item__content__img--visible">
+                    <img src="img/item/thumb_1.png" title="Dark classic fit suit" alt="Dark classic fit suit"
+                        class="item__content__img">
+                    <img src="img/item/thumb_2.png" title="Dark classic fit suit" alt="Dark classic fit suit"
+                        class="item__content__img">
+                </div>
+                <div class="item__content__thumb__wrapper">
+                    <img src="img/item/thumb_0.png" title="Dark classic fit suit" alt="Dark classic fit suit"
+                        class="item__content__thumb">
+                    <img src="img/item/thumb_1.png" title="Dark classic fit suit" alt="Dark classic fit suit"
+                        class="item__content__thumb">
+                    <img src="img/item/thumb_2.png" title="Dark classic fit suit" alt="Dark classic fit suit"
+                        class="item__content__thumb">
+                </div>
+            </div>
+            <div class="item__content item__content--info">
+                <h2 class="item__heading">Dark classic fit suit</h2>
+                <p class="item__price--mobile">£180.60</p>
+                <p class="item__info">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs and a subtle stripe pattern throughout. </p>
+                <p class="item__price">£180.60</p>
+                <div class="item__select">
+                    <p class="item__text">Size:</p>
+                    <div class="item__wrapper">
+                        <input class="item__radio" type="radio" name="item__size" id="item__size--52" checked>
+                        <label class="item__label" for="item__size--52">UK 52</label>
+                    </div>
+                    <div class="item__wrapper">
+                        <input class="item__radio" type="radio" name="item__size" id="item__size--54">
+                        <label class="item__label" for="item__size--54">UK 54</label>
+                    </div>
+                    
+                    <div class="item__wrapper">
+                        <input class="item__radio" type="radio" name="item__size" id="item__size--56">
+                        <label class="item__label" for="item__size--56">UK 56</label>
+                    </div>
+                </div>
+                <div class="item__select">
+                    <p class="item__text">Color:</p>
+                    <div class="item__wrapper">
+                        <input class="item__radio" type="radio" name="item__color" id="item__color--black" checked>
+                        <label class="item__label" for="item__color--black">Black</label>
+                    </div>
+                    <div class="item__wrapper">
+                        <input class="item__radio" type="radio" name="item__color" id="item__color--blue">
+                        <label class="item__label" for="item__color--blue">Blue</label>
+                    </div>
+                </div>
+                <button class="item__button">Add to bag</button>
+            </div>
         </div>
     </section>
     <section class="banners">
@@ -68,7 +126,7 @@
                 <p class="banners__content__title banners__content__title--center">Repair Patches</p>
                 <p class="banners__content__text banners__content__title--center">£150.50</p>
             </div>
-        </a>        
+        </a>
         <a href="#" class="banners__content banners__content--bag">
             <div class="banners__content__text__container banners__content__text__container--low">
                 <p class="banners__content__title banners__content__title--bag banners__content__title--center">Sale</p>
@@ -143,4 +201,5 @@
         <script src="js/start.js"></script>
     </footer>
 </body>
+
 </html>
