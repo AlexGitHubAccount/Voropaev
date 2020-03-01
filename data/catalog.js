@@ -15,7 +15,7 @@ window.catalog = [{
 }, {
     id: '07cf6ce2-6eee-4e78-a441-f257fdea7ed6',
     dateAdded: '2017-06-12T15:35:13.000Z',
-    title: 'Boyfriend T-Shirt with Bohemian print',
+    title: 'Boyfriend T-Shirt with Bohemian Print',
     description: '',
     discountedPrice: 90,
     price: 120,

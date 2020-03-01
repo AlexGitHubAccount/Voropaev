@@ -126,6 +126,9 @@
 .bag-total__pricemark{
     font: 1.35em OpenSans, sans-serif;
 }
+.bag-total__discount--hidden{
+    display: none;
+}
 .bag-total__discount{
     font: 0.95em RobotoRegular, sans-serif;
     color: #f14a58;
@@ -167,6 +170,7 @@
     .bag-total__wrap:nth-child(2){
         width: 45%;
     }
+    
     .bag-total__discount{
         font-size: 1.05em;
         top: -25%;

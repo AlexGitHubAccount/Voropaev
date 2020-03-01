@@ -20,7 +20,8 @@
                 <a href="shopping-bag.html" class="header__login-bag__bag__wrapper">
                     <img class="header__login-bag__bag__icon" width="12" height="12" alt="bag-icon"
                         src="img/start/1300/ico_bag.png">
-                    <p class="header__login-bag__bag__text">Bag £236.50 (4)</p>
+                    <p class="header__login-bag__bag__text">Bag <span id="bag_totalPrice">£236.50</span> (<span
+                            id="bag_totalQuantity">4</span>)</p>
                 </a>
             </div>
             <div id="header__burger" class="header__burger">&#8801;</div>
@@ -62,8 +63,7 @@
     <section class="bag">
         <h2 class="bag__heading">Shopping bag</h2>
         <div class="line__wrapper"></div>
-        <div class="bag-content">
-            <h2 class="bag__heading bag__heading--empty">Bag is empty</h2>
+        <div class="bag-content" id="bag-content">
             <div class="bag-content__item">
                 <div class="bag-content__wrapper bag-content__wrapper--image">
                     <img class="bag-content__image" src="img/catalog/photo.png" alt="Only Skinny Jeans"
@@ -78,8 +78,8 @@
                     <div class="bag-content__wrap">
                         <p class="bag-content__text">Color: Philipa wash</p>
                         <p class="bag-content__text">Size: UK 17</p>
-                        <p class="bag-content__text">Quantity: <span class="bag-content__icon">&#06;</span><span
-                                class="bag-content__quantity">1</span><span class="bag-content__icon">+</span></p>
+                        <p class="bag-content__text">Quantity: <span class="bag-content__icon bag-content__icon--minus">&#06;</span><span
+                                class="bag-content__quantity">1</span><span class="bag-content__icon bag-content__icon--plus">+</span></p>
                     </div>
                     <button class="bag-content__remove">Remove item</button>
                 </div>
@@ -97,8 +97,8 @@
                     <div class="bag-content__wrap">
                         <p class="bag-content__text">Color: Blue</p>
                         <p class="bag-content__text">Size: UK 18</p>
-                        <p class="bag-content__text">Quantity: <span class="bag-content__icon">&#06;</span><span
-                                class="bag-content__quantity">1</span><span class="bag-content__icon">+</span></p>
+                        <p class="bag-content__text">Quantity: <span class="bag-content__icon bag-content__icon--minus">&#06;</span><span
+                                class="bag-content__quantity">1</span><span class="bag-content__icon bag-content__icon--plus">+</span></p>
                     </div>
                     <button class="bag-content__remove">Remove item</button>
                 </div>
@@ -116,8 +116,8 @@
                     <div class="bag-content__wrap">
                         <p class="bag-content__text">Color: Black</p>
                         <p class="bag-content__text">Size: UK 18</p>
-                        <p class="bag-content__text">Quantity: <span class="bag-content__icon">&#06;</span><span
-                                class="bag-content__quantity">1</span><span class="bag-content__icon">+</span></p>
+                        <p class="bag-content__text">Quantity: <span class="bag-content__icon bag-content__icon--minus">&#06;</span><span
+                                class="bag-content__quantity">1</span><span class="bag-content__icon bag-content__icon--plus">+</span></p>
                     </div>
                     <button class="bag-content__remove">Remove item</button>
                 </div>
@@ -136,8 +136,8 @@
                     <div class="bag-content__wrap">
                         <p class="bag-content__text">Color: Green</p>
                         <p class="bag-content__text">Size: UK 19</p>
-                        <p class="bag-content__text">Quantity: <span class="bag-content__icon">&#06;</span><span
-                                class="bag-content__quantity">1</span><span class="bag-content__icon">+</span></p>
+                        <p class="bag-content__text">Quantity: <span class="bag-content__icon bag-content__icon--minus">&#06;</span><span
+                                class="bag-content__quantity">1</span><span class="bag-content__icon bag-content__icon--plus">+</span></p>
                     </div>
                     <button class="bag-content__remove">Remove item</button>
                 </div>
@@ -148,14 +148,14 @@
             code <span class="bag__mark">nexday</span> at checkout</p>
         <div class="bag-total">
             <div class="bag-total__wrap">
-                <button class="bag-total__clear">Empty bag</button>
+                <button class="bag-total__clear" id = "bag-total__clear">Empty bag</button>
             </div>
             <div class="bag-total__wrap">
-                <button class="bag-total__checkout">Checkout</button>
+                <button id = "bag-total__checkout" class="bag-total__checkout">Checkout</button>
             </div>
             <div class="bag-total__wrap">
-                <p class="bag-total__discount">Applied discount: <span class="bag-total__discountmark">£15.00</span></p>
-                <p class="bag-total__price">Total price: <span class="bag-total__pricemark">£236.50</span></p>
+                <p class="bag-total__discount" id = "bag-total__discount">Applied discount: <span class="bag-total__discountmark">£15.00</span></p>
+                <p class="bag-total__price">Total price: <span class="bag-total__pricemark" id = "bag-total__pricemark">£236.50</span></p>
             </div>
         </div>
     </section>
@@ -225,7 +225,10 @@
         </section>
 
     </footer>
+    <script src="data/catalog.js"></script>
+    <script src="data/best-offer.js"></script>
     <script src="js/start.js"></script>
+    <script src="js/shopping-bag.js"></script>
 </body>
 
 </html>

@@ -22,7 +22,6 @@ function init() {
         }
     });
     updateFilters();
-    updateBag();
 }
 function updateFilters() {
     let fitlers = document.getElementsByClassName("filter__select");
@@ -42,17 +41,5 @@ function updateFilters() {
         })
     }
 }
-function updateBag() {
-    let button = document.getElementById("item__button");
 
-
-    button.addEventListener("click", function () {
-        let currentPrice = +document.getElementById("bag_totalPrice").innerText;
-        let currentQuantity = +document.getElementById("bag_totalQuantity").innerText;
-        let itemPrice = +document.getElementById("item__price").innerText.slice(1);
-        console.log(itemPrice);
-        document.getElementById("bag_totalPrice").innerText = (currentPrice + itemPrice).toFixed(2);
-        document.getElementById("bag_totalQuantity").innerText = currentQuantity + 1;
-    })
-}
 init();
