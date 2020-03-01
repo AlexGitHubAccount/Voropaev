@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="body">
     <header class="header">
         <section class="header__login-bag">
@@ -14,31 +16,36 @@
             <h1 class="header__login-bag__logo--mobile">TL</h1>
             <div class="header__login-bag__wrapper">
                 <a href="#" class="header__login-bag__login">E-mail sing up</a>
-                <a href="#" class="header__login-bag__bag__wrapper">
+                <a href="shopping-bag.html" class="header__login-bag__bag__wrapper">
                     <img class="header__login-bag__bag__icon" width="12" height="12" alt="bag-icon"
                         src="img/start/1300/ico_bag.png">
-                    <p class="header__login-bag__bag__text">Bag (0)</p>
+                    <p class="header__login-bag__bag__text">Bag £236.50 (4)</p>
                 </a>
             </div>
             <div id="header__burger" class="header__burger">&#8801;</div>
         </section>
         <nav id="header__menu" class="header__menu">
             <ul class="header__menu__list">
-                <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="catalog.html">Women</a>
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link"
+                        href="catalog.html">Women</a>
                 </li>
-                <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="catalog.html">Men</a>
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link"
+                        href="catalog.html">Men</a>
                 </li>
                 <li class="header__menu__list__element"><a class="header__menu__list__element__link"
                         href="catalog.html">Handbags</a></li>
                 <li class="header__menu__list__element"><a class="header__menu__list__element__link"
                         href="catalog.html">Accessories</a></li>
-                <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="catalog.html">Sale</a>
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link"
+                        href="catalog.html">Sale</a>
                 </li>
-                <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="catalog.html">New
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link"
+                        href="catalog.html">New
                         Arrivals</a></li>
                 <li class="header__menu__list__element"><a class="header__menu__list__element__link"
                         href="catalog.html">Clearance</a></li>
-                <li class="header__menu__list__element"><a class="header__menu__list__element__link" href="catalog.html">Store
+                <li class="header__menu__list__element"><a class="header__menu__list__element__link"
+                        href="catalog.html">Store
                         Locator</a></li>
             </ul>
             <form action="" id="header__menu__search" class="header__menu__search">
@@ -50,148 +57,231 @@
             </form>
         </nav>
     </header>
+    <div class="line__wrapper"></div>
     <section class="filters">
-        <select name="fashion" id="filters__select__fashion" class="filter__select">
-            <option value="Not selected">Not selected</option>
-            <option value="Nail the 90s">Nail the 90s</option>
-            <option value="Casual style">Casual style</option>
-            <option value="New look">New look</option>
-            <option value="Sport">Sport</option>
-            <option value="Vintage">Vintage</option>
-            <option value="Classical style">Classical style</option>
-        </select>
-        <select name="fashion" id="filters__select__type" class="filter__select"></select>
-        <select name="fashion" id="filters__select__" class="filter__select"></select>
-        <select name="fashion" id="filters__select__fashion" class="filter__select"></select>
-        <select name="fashion" id="filters__select__fashion" class="filter__select"></select>
+        <div name="fashion" id="filters__fashion" class="filter__select">
+            <div class="filter__info">
+                <p class="filter__title">Fashion</p>
+                <p class="filter__value"></p>
+                <span class="filter__symbol"><img src="img/catalog/filtermark.png" alt="mark" width="15" height="12"></span>
+            </div>
+            <div class="filters__dropdown">
+                <label class="filters__label"><input class="filters__input" type="radio" name="fashion" value="Not selected" checked>Not selected</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="fashion" value="Nail the 90s">Nail the 90s</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="fashion" value="Casual style">Casual style</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="fashion" value="New look">New look</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="fashion" value="Sport">Sport</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="fashion" value="Vintage">Vintage</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="fashion" value="Classical style">Classical style</label>
+            </div>
+        </div>
+        <div name="fashion" id="filters__type" class="filter__select">
+            <div class="filter__info">
+                <p class="filter__title">Product type</p>
+                <p class="filter__value"></p>
+                <span class="filter__symbol"><img src="img/catalog/filtermark.png" alt="mark" width="15" height="12"></span>
+            </div>
+            <div class="filters__dropdown">
+                <label class="filters__label"><input class="filters__input" type="radio" name="type" value="Not selected" checked>Not selected</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="type" value="Coats & Jackets">Coats & Jackets</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="type" value="Dresses">Dresses</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="type" value="Jersey tops">Jersey tops</label>
+            </div>
+        </div>
+        <div name="fashion" id="filters__color" class="filter__select">
+            <div class="filter__info">
+                <p class="filter__title">Color</p>
+                <p class="filter__value"></p>
+                <span class="filter__symbol"><img src="img/catalog/filtermark.png" alt="mark" width="15" height="12"></span>
+            </div>
+            <div class="filters__dropdown">
+                <label class="filters__label"><input class="filters__input" type="radio" name="color" value="Not selected" checked>Not selected</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="color" value="Black">Black</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="color" value="Blue">Blue</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="color" value="Red">Red</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="color" value="Green">Green</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="color" value="Golden">Golden</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="color" value="Classical style">Classical style</label>
+            </div>
+        </div>
+        <div name="fashion" id="filters__brand" class="filter__select">
+            <div class="filter__info">
+                <p class="filter__title">Brand</p>
+                <p class="filter__value"></p>
+                <span class="filter__symbol"><img src="img/catalog/filtermark.png" alt="mark" width="15" height="12"></span>
+            </div>
+            <div class="filters__dropdown">
+                <label class="filters__label"><input class="filters__input" type="radio" name="brand" value="Not selected" checked>Not selected</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="brand" value="Chi Chi London">Chi Chi London</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="brand" value="Antipodium">Antipodium</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="brand" value="Adidas">Adidas</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="brand" value="New Balance">New Balance</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="brand" value="River island">River island</label>
+            </div>
+        </div>
+        <div name="fashion" id="filters__size" class="filter__select">
+            <div class="filter__info">
+                <p class="filter__title">Size</p>
+                <p class="filter__value"></p>
+                <span class="filter__symbol"><img src="img/catalog/filtermark.png" alt="mark" width="15" height="12"></span>
+            </div>
+            <div class="filters__dropdown">
+                <label class="filters__label"><input class="filters__input" type="radio" name="size" value="Not selected" checked>Not selected</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="size" value="UK 2">UK 2</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="size" value="UK 18">UK 18</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="size" value="UK 18L">UK 18L</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="size" value="UK 20">UK 20</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="size" value="UK 20L">UK 20L</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="size" value="UK 20S">UK 20S</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="size" value="UK 22S">UK 22S</label>
+                <label class="filters__label"><input class="filters__input" type="radio" name="size" value="UK 22">UK 22</label>
+            </div>
+        </div>
+        <div name="fashion" id="filters__range" class="filter__select filter__select--range">
+            <div class="filter__info">
+                <p class="filter__title">Price range</p>
+                <p class="filter__value"></p>
+                <span class="filter__symbol"><img src="img/catalog/filtermark.png" alt="mark" width="15" height="12"></span>
+            </div>
+            <div class="filter__dropdown filter__dropdown--range" id = "filter__dropdown--range">
+                <span class="filter__mark filter__mark--first"><img src="img/catalog/pip_1.png" alt="mark" ></span>
+                <img src="img/catalog/line.png" alt="line" height = "3px">                
+                <span class="filter__mark filter__mark--second"><img src="img/catalog/pip_1.png" alt="mark" ></span>
+            </div>
+        </div>
     </section>
+    <div class="line__wrapper"></div>
     <section class="catalog">
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo.png" alt="Only Skinny Jeans"
-                        title="Only Skinny Jeans">
-                    <span class="catalog__content__image__new">NEW</span>
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Only Skinny Jeans" title="Only Skinny Jeans">
-                </div>
-                <h3 class="catalog__content__title">Only Skinny Jeans</h3>
-                <p class="catalog__content__price">£65.50</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo6.png" alt="Neck Knitted Jumper"
-                        title="Neck Knitted Jumper">
-                    <span class="catalog__content__image__new">NEW</span>
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Neck Knitted Jumper" title="Neck Knitted Jumper">
-                </div>
-                <h3 class="catalog__content__title">Neck Knitted Jumper</h3>
-                <p class="catalog__content__price">£76.25</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo5.png"
-                        alt="Turtle Neck Jumper in Rib" title="Turtle Neck Jumper in Rib">
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Turtle Neck Jumper in Rib" title="Turtle Neck Jumper in Rib">
-                </div>
-                <h3 class="catalog__content__title">Turtle Neck Jumper in Rib</h3>
-                <p class="catalog__content__price">£130.25</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo3.png"
-                        alt="With Patchwork Crochet" title="With Patchwork Crochet">
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="With Patchwork Crochet" title="With Patchwork Crochet">
-                </div>
-                <h3 class="catalog__content__title">With Patchwork Crochet</h3>
-                <p class="catalog__content__price">£80.60</p>
-            </div>
-            <div class="catalog__sale-info">
-                <h2 class="catalog__sale-info__heading">Last weekend <span class="catalog__sale-info__heading__mark">extra 50%</span> off on all reduced boots and shoulder bags</h2>
-                <p class="catalog__sale-info__text">This offer is valid in-store and online. Prices displayed reflect this additional discount. this offer ends at 11:59 GMT on March 1st 2019</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo2.png" alt="Levi’s Jeans for women"
-                        title="Levi’s Jeans for women">
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Levi’s Jeans for women" title="Levi’s Jeans for women">
-                </div>
-                <h3 class="catalog__content__title">Levi’s Jeans for women</h3>
-                <p class="catalog__content__price">£95.50</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo13.png" alt="Boyfriend T-Shirt with Bohemian Print"
-                        title="Boyfriend T-Shirt with Bohemian Print">
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Boyfriend T-Shirt with Bohemian Print" title="Boyfriend T-Shirt with Bohemian Print">
-                </div>
-                <h3 class="catalog__content__title">Boyfriend T-Shirt with Bohemian Print</h3>
-                <p class="catalog__content__price"><span class = "catalog__content__price__old">£120.00<img class="catalog__content__price__old__strikeout" src="img/catalog/strikeout.png" alt="strikeout"></span>£76.25</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo12.png"
-                        alt="Colour Block" title="Colour Block">
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Colour Block" title="Colour Block">
-                </div>
-                <h3 class="catalog__content__title">Colour Block</h3>
-                <p class="catalog__content__price">£550.50</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo11.png"
-                        alt="Monki Festval Knitted" title="Monki Festval Knitted">
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Monki Festval Knitted" title="Monki Festval Knitted">
-                </div>
-                <h3 class="catalog__content__title">Monki Festval Knitted</h3>
-                <p class="catalog__content__price">£24.75</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo10.png" alt="Oversized Cardigan"
-                        title="Oversized Cardigan">
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Oversized Cardigan" title="Oversized Cardigan">
-                </div>
-                <h3 class="catalog__content__title">Oversized Cardigan</h3>
-                <p class="catalog__content__price">£90.00</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo9.png" alt="Paul & Joe Sister Jumper  with Neon Trims"
-                        title="Paul & Joe Sister Jumper  with Neon Trims">
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Paul & Joe Sister Jumper  with Neon Trims" title="Paul & Joe Sister Jumper  with Neon Trims">
-                </div>
-                <h3 class="catalog__content__title">Paul & Joe Sister Jumper  with Neon Trims</h3>
-                <p class="catalog__content__price">£19.75</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo8.png"
-                        alt="Only Busted Knee Jean" title="Only Busted Knee Jean">
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Only Busted Knee Jean" title="Only Busted Knee Jean">
-                </div>
-                <h3 class="catalog__content__title">Only Busted Knee Jean</h3>
-                <p class="catalog__content__price">£140.50</p>
-            </div>
-            <div class="catalog__product__wrapper">
-                <div class="catalog__product__image__wrapper">
-                    <img class="catalog__product__image" src="img/catalog/photo7.png"
-                        alt="Boyfriend T-Shirt with Paris Print" title="Boyfriend T-Shirt with Paris Print">
-                    <img class="catalog__product__image--filter" src="img/catalog/filter.png"
-                        alt="Boyfriend T-Shirt with Paris Print" title="Boyfriend T-Shirt with Paris Print">
-                </div>
-                <h3 class="catalog__content__title">Boyfriend T-Shirt with Paris Print</h3>
-                <p class="catalog__content__price">£87.75</p>
-            </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo.png" alt="Only Skinny Jeans"
+                    title="Only Skinny Jeans">
+                <span class="catalog__content__image__new">NEW</span>
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png" alt="Only Skinny Jeans"
+                    title="Only Skinny Jeans">
+            </a>
+            <h3 class="catalog__content__title">Only Skinny Jeans</h3>
+            <p class="catalog__content__price">£65.50</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo6.png" alt="Neck Knitted Jumper"
+                    title="Neck Knitted Jumper">
+                <span class="catalog__content__image__new">NEW</span>
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png" alt="Neck Knitted Jumper"
+                    title="Neck Knitted Jumper">
+            </a>
+            <h3 class="catalog__content__title">Neck Knitted Jumper</h3>
+            <p class="catalog__content__price">£76.25</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo5.png" alt="Turtle Neck Jumper in Rib"
+                    title="Turtle Neck Jumper in Rib">
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png"
+                    alt="Turtle Neck Jumper in Rib" title="Turtle Neck Jumper in Rib">
+            </a>
+            <h3 class="catalog__content__title">Turtle Neck Jumper in Rib</h3>
+            <p class="catalog__content__price">£130.25</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo3.png" alt="With Patchwork Crochet"
+                    title="With Patchwork Crochet">
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png" alt="With Patchwork Crochet"
+                    title="With Patchwork Crochet">
+            </a>
+            <h3 class="catalog__content__title">With Patchwork Crochet</h3>
+            <p class="catalog__content__price">£80.60</p>
+        </div>
+        <div class="catalog__sale-info">
+            <h2 class="catalog__sale-info__heading">Last weekend <span class="catalog__sale-info__heading__mark">extra
+                    50%</span> off on all reduced boots and shoulder bags</h2>
+            <p class="catalog__sale-info__text">This offer is valid in-store and online. Prices displayed reflect this
+                additional discount. this offer ends at 11:59 GMT on March 1st 2019</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo2.png" alt="Levi’s Jeans for women"
+                    title="Levi’s Jeans for women">
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png" alt="Levi’s Jeans for women"
+                    title="Levi’s Jeans for women">
+            </a>
+            <h3 class="catalog__content__title">Levi’s Jeans for women</h3>
+            <p class="catalog__content__price">£95.50</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo13.png"
+                    alt="Boyfriend T-Shirt with Bohemian Print" title="Boyfriend T-Shirt with Bohemian Print">
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png"
+                    alt="Boyfriend T-Shirt with Bohemian Print" title="Boyfriend T-Shirt with Bohemian Print">
+            </a>
+            <h3 class="catalog__content__title">Boyfriend T-Shirt with Bohemian Print</h3>
+            <p class="catalog__content__price"><span class="catalog__content__price__old">£120.00<img
+                        class="catalog__content__price__old__strikeout" src="img/catalog/strikeout.png"
+                        alt="strikeout"></span>£76.25</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo12.png" alt="Colour Block"
+                    title="Colour Block">
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png" alt="Colour Block"
+                    title="Colour Block">
+            </a>
+            <h3 class="catalog__content__title">Colour Block</h3>
+            <p class="catalog__content__price">£550.50</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo11.png" alt="Monki Festval Knitted"
+                    title="Monki Festval Knitted">
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png" alt="Monki Festval Knitted"
+                    title="Monki Festval Knitted">
+            </a>
+            <h3 class="catalog__content__title">Monki Festval Knitted</h3>
+            <p class="catalog__content__price">£24.75</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo10.png" alt="Oversized Cardigan"
+                    title="Oversized Cardigan">
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png" alt="Oversized Cardigan"
+                    title="Oversized Cardigan">
+            </a>
+            <h3 class="catalog__content__title">Oversized Cardigan</h3>
+            <p class="catalog__content__price">£90.00</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo9.png"
+                    alt="Paul & Joe Sister Jumper  with Neon Trims" title="Paul & Joe Sister Jumper  with Neon Trims">
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png"
+                    alt="Paul & Joe Sister Jumper  with Neon Trims" title="Paul & Joe Sister Jumper  with Neon Trims">
+            </a>
+            <h3 class="catalog__content__title">Paul & Joe Sister Jumper with Neon Trims</h3>
+            <p class="catalog__content__price">£19.75</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo8.png" alt="Only Busted Knee Jean"
+                    title="Only Busted Knee Jean">
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png" alt="Only Busted Knee Jean"
+                    title="Only Busted Knee Jean">
+            </a>
+            <h3 class="catalog__content__title">Only Busted Knee Jean</h3>
+            <p class="catalog__content__price">£140.50</p>
+        </div>
+        <div class="catalog__product__wrapper">
+            <a href="item.html" class="catalog__product__image__wrapper">
+                <img class="catalog__product__image" src="img/catalog/photo7.png"
+                    alt="Boyfriend T-Shirt with Paris Print" title="Boyfriend T-Shirt with Paris Print">
+                <img class="catalog__product__image--filter" src="img/catalog/filter.png"
+                    alt="Boyfriend T-Shirt with Paris Print" title="Boyfriend T-Shirt with Paris Print">
+            </a>
+            <h3 class="catalog__content__title">Boyfriend T-Shirt with Paris Print</h3>
+            <p class="catalog__content__price">£87.75</p>
+        </div>
         </div>
         <div class="catalog__button__wrapper"><button class="catalog____button">Show more</button></div>
     </section>
@@ -207,7 +297,7 @@
                 <p class="banners__content__title banners__content__title--center">Repair Patches</p>
                 <p class="banners__content__text banners__content__title--center">£150.50</p>
             </div>
-        </a>        
+        </a>
         <a href="#" class="banners__content banners__content--bag">
             <div class="banners__content__text__container banners__content__text__container--low">
                 <p class="banners__content__title banners__content__title--bag banners__content__title--center">Sale</p>
@@ -282,4 +372,5 @@
         <script src="js/start.js"></script>
     </footer>
 </body>
+
 </html>

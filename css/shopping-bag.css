@@ -180,5 +180,63 @@
     .bag-total__pricemark{
         font: 1.25em OpenSans, sans-serif;
     }
+    
+}
+@media screen and (max-width: 767px) {
+    .header{
+        margin-bottom: 0;
+    }
+    .bag{
+        max-width: 375px;
+    }
+    .bag-content,
+    .bag__heading{
+        max-width: 335px;
+    }
+    .bag-content__item{
+        width: 100%;
+    }
+    .bag-content__title{
+        font: 0.8em RobotoBold, sans-serif;
+        max-width: 70%;
+    }
+    .bag__info{
+        font-size: 0.65em;
+        padding: 13px 20px;
+    }
+    .bag-total{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
+    .bag-total__wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bag-total__discount{
+        position: relative;
+    }
+    .bag-total__discount{
+        font-size: 0.85em;
+        top: -25%;
+    }
+    .bag-total__discountmark{
+        font: 0.9em RobotoRegular, sans-serif;
+    }
+    .bag-total__price{
+        font: 1.05em OpenSans, sans-serif;
+        margin: 0 0 20px;
+    }
+    .bag-total__pricemark{
+        font: 1.1em OpenSans, sans-serif;
+        margin-top: 0;
+    }
+    .bag-total__wrap:nth-child(2){
+        width: 65%;
+    }
+    .bag-total__clear{
+        margin-top: 20px;
+    }
 }
