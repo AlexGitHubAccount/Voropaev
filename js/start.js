@@ -1,6 +1,5 @@
 function init() {
     let button = document.getElementById("header__burger"),
-        close = document.getElementById("header__burger--close"),
         menu = document.getElementById("header__menu"),
         searchButton = document.getElementById("header__menu__search__button"),
         search = document.getElementById("header__menu__search"),
@@ -26,25 +25,7 @@ function init() {
             inp.classList.remove("header__menu__search__input--visible");
         }
     });
-    updateFilters();
 }
-function updateFilters() {
-    let fitlers = document.getElementsByClassName("filter__select");
-    for (let i = 0; i < fitlers.length; i++) {
-        fitlers[i].addEventListener("change", function (e) {
-            if (e.target.value != "Not selected") {
-                let elem = e.target.parentNode.parentNode.parentNode.getElementsByClassName("filter__value");
-                elem.item(0).innerText = e.target.value;
-                elem[0].parentNode.classList.add("filter__info--checked");
-                elem[0].parentNode.getElementsByClassName("filter__title")[0].classList.add("filter__title--checked");
-            } else {
-                let elem = e.target.parentNode.parentNode.parentNode.getElementsByClassName("filter__value");
-                elem.item(0).innerText = "";
-                elem[0].parentNode.classList.remove("filter__info--checked");
-                elem[0].parentNode.getElementsByClassName("filter__title")[0].classList.remove("filter__title--checked");
-            }
-        })
-    }
-}
+
 
 init();

@@ -43,13 +43,16 @@ button {
     margin: 30px auto;
 }
 
-.header__burger {
+.header__burger,
+.filter__burger {
     padding: 0 0 0 20px;
     display: none;
     border-left: 1px solid #e7e8e8;
 }
 
 .header__burger:hover,
+.filter__burger:hover,
+.filter__burger--close,
 .header__burger--close {
     cursor: url(../img/start/1300/cursor.png), pointer;
     color: #f14a58;
@@ -62,9 +65,14 @@ button {
 
 .header__login-bag__logo, 
 .header__login-bag__logo--mobile, 
-.header__burger {
+.header__burger,
+.filter__burger {
     margin: 0px;
     font: 1.75em OpenSans, sans-serif;
+}
+.filter__burger{
+    border-left: none;
+    margin: 0 20px 0 0;
 }
 .header__login-bag__login{
     margin-right: 10px;
@@ -604,6 +612,7 @@ button {
     padding: 15px 0;
     flex-direction: column;
     cursor: url(../img/start/1300/cursor.png), pointer;
+    box-shadow: 0px 2px 3px #e5e5e5;
 }
 .filters__input{
     display: none;
@@ -679,6 +688,46 @@ button {
     top: -20px;
     left: -20px;
 }
+.filters--mobile{
+    display: none;
+    font: 0.9em OpenSans, sans-serif;
+    max-width: 690px;
+    margin: 0 auto;
+}
+.filters-bar{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-dropdown{    
+    border-top: 0.9px solid #e7e8e8;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filter-dropdown--visible{
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    width: 690px;
+}
+.filter-dropdown__element{
+    color: #a8a8a8;
+    margin-left: 15px;
+    line-height: 2.5em;
+}
+.filter-dropdown__element--selected,
+.filters-bar__element--highlighted{
+    color: #f14a58;
+}
+.filter-dropdown__element--notselected{
+    color: #000;
+}
+.filter-dropdown__list{
+    padding-left: 0;
+    width: 30%;
+}
+
 @media screen and (max-width: 1024px) {
     .body {
         max-width: 768px;
@@ -852,16 +901,29 @@ button {
     .filters{
         display: none;
     }
+    .filters--mobile{
+        display: block;
+    }
+    .filter__burger {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 767px) {
-    .body {
+    .body{
         max-width: 375px;
     }
     .header {
         max-width: 335px;
         align-items: center;
         margin-top: 0;
+    }
+    .filters--mobile,
+    .filter-dropdown--visible{
+        max-width: 335px;
     }
     .header__login-bag {
         height: 70px;
