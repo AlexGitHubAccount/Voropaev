@@ -1,5 +1,6 @@
 function init() {
     let button = document.getElementById("header__burger"),
+        close = document.getElementById("header__burger--close"),
         menu = document.getElementById("header__menu"),
         searchButton = document.getElementById("header__menu__search__button"),
         search = document.getElementById("header__menu__search"),
@@ -8,8 +9,12 @@ function init() {
     button.addEventListener("click", function () {
         if (menu.className.indexOf("mobile") == -1) {
             menu.classList.add("header__menu--mobile");
+            button.innerText = "×";
+            button.classList.add("header__burger--close");
         } else {
             menu.classList.remove("header__menu--mobile");
+            button.innerText = "≡";
+            button.classList.remove("header__burger--close");
         }
     });
     searchButton.addEventListener("click", function () {
