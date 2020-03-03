@@ -24,7 +24,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: ['Black', 'White'],
     sizes: ['UK 18'],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo13.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: '0fdfa061-838d-42ab-ae06-99c66115f633',
@@ -66,7 +66,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: ['Blue'],
     sizes: ['UK 18'],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo2.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: '739d3ae0-6dca-4453-a7a4-a94b841a296d',
@@ -122,7 +122,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: ['Phillipa wash'],
     sizes: ['UK 17'],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: '9ded7821-e510-4a16-ba9f-57c1e3442ad8',
@@ -150,7 +150,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: ['Dark Blue'],
     sizes: ['UK 19'],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo8.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: 'ccc8a5d5-7cdf-4706-95f2-abc64761400d',
@@ -178,7 +178,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: ['Raw umber', 'Dark blue'],
     sizes: ['UK 18', 'UK 19'],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo10.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: 'ff665110-5e7f-435d-b1b4-651c3d5050ca',

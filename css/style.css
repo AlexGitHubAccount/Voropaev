@@ -290,6 +290,8 @@ button {
 .newArrivals__content__title, 
 .catalog__content__title {
     font: .875em RobotoBold, sans-serif;
+}
+.catalog__content__title {
     max-width: 80%;
 }
 
@@ -363,7 +365,9 @@ button {
     border: 1px solid #f14a58;
     color: #f14a58;
 }
-
+.bestOffer__bag-link:hover{
+    text-decoration: none;
+}
 .bestOffer__bag-button {
     width: 45%;
     display: none;
@@ -787,13 +791,18 @@ button {
     .banners__content--bag {
         display: none;
     }
-    .header, .bestOffer, .newArrivals, .catalog, .footer__share {
+    .header, 
+    .bestOffer, 
+    .newArrivals, 
+    .catalog, 
+    .footer__share {
         max-width: 690px;
     }
     .bestOffer__heading, .newArrivals__heading {
         font-size: 2.15em;
     }
-    .bestOffer__content__total__new, .bestOffer__content__symbol {
+    .bestOffer__content__total__new, 
+    .bestOffer__content__symbol {
         font-size: 2em;
     }
     .bestOffer__content__total__new {
@@ -826,7 +835,9 @@ button {
     .catalog__button__wrapper {
         order: 4;
     }
-    .catalog__product__wrapper:first-child, .catalog__product__wrapper:nth-child(2), .catalog__product__wrapper:nth-child(3) {
+    .catalog__product__wrapper:first-child, 
+    .catalog__product__wrapper:nth-child(2), 
+    .catalog__product__wrapper:nth-child(3) {
         order: 1;
     }
     .catalog__sale-info {
