@@ -72,6 +72,8 @@ button {
 }
 .filter__burger{
     border-left: none;
+    padding: 0;
+    box-shadow: -20px 0px 7px #fff;
     margin: 0 20px 0 0;
 }
 .header__login-bag__login{
@@ -925,6 +927,7 @@ button {
     .filter-dropdown--visible{
         max-width: 335px;
     }
+    
     .header__login-bag {
         height: 70px;
         align-items: center;
@@ -1130,5 +1133,16 @@ button {
     }
     .footer_share__copyright {
         width: 70%;
+    }
+    .filters-bar{
+        max-height: 50px;
+        position: relative;
+    }
+    .filters-bar__selected{
+        z-index: 0;
+        overflow: hidden;
+    }
+    .filter-dropdown__list{
+        width: 50%;
     }
 }

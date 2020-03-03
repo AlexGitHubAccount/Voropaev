@@ -18,8 +18,9 @@
     }
     //---------------mobile filters----------------
     let button = document.getElementById("filter__burger");
+    let bar = document.getElementById("filters-bar")
     let filters = document.getElementById("filter-dropdown--mobile");
-    button.addEventListener("click", function () {
+    bar.addEventListener("click", function () {
         if (filters.className.indexOf("visible") == -1) {
             filters.classList.add("filter-dropdown--visible");
             button.innerText = "×";
