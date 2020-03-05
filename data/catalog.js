@@ -10,7 +10,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: [],
     sizes: [],
-    thumbnail: 'thumbnail path', // replace with path to image extracted from catalog layout
+    thumbnail: 'img/catalog/photo11.png', // replace with path to image extracted from catalog layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: '07cf6ce2-6eee-4e78-a441-f257fdea7ed6',
@@ -38,7 +38,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: [],
     sizes: [],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo7.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: '4a3d3c3e-9dc5-4d99-b33d-42b22e20dc0b',
@@ -80,7 +80,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: [],
     sizes: [],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo3.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: '80d32566-d81c-4ba0-9edf-0eceda3b4360',
@@ -108,7 +108,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: ['Green'],
     sizes: ['UK 19'],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo6.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: '8c061815-6a7d-4465-bb78-1bdc6c5adebf',
@@ -136,7 +136,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: [],
     sizes: [],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo5.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: 'bec71daa-d133-473d-bbb0-1ee0a427a17d',
@@ -164,7 +164,7 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: [],
     sizes: [],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo12.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
     id: 'e50a3153-7833-4b85-b412-1a39d215fd38',
@@ -192,6 +192,6 @@ window.catalog = [{
     fashion: 'Casual style',
     colors: ['Blue'],
     sizes: ['UK 18'],
-    thumbnail: 'thumbnail path', // replace with image extracted from item layout
+    thumbnail: 'img/catalog/photo9.png', // replace with image extracted from item layout
     preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }];

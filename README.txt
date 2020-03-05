@@ -1,0 +1,1 @@
+The project uses local storage. Run it on a web server.
