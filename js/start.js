@@ -25,7 +25,13 @@ function init() {
             inp.classList.remove("header__menu__search__input--visible");
         }
     });
+    updateBag();
 }
-
+function updateBag(){
+    let price = localStorage.getItem("price");
+    let quantity = localStorage.getItem("quantity");
+    document.getElementById("bag_totalPrice").innerText =  price;
+    document.getElementById("bag_totalQuantity").innerText =  quantity;
+}
 
 init();

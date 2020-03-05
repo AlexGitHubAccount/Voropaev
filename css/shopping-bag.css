@@ -82,6 +82,10 @@
     padding: 0;
     font: 0.9em OpenSans, sans-serif;
 }
+.bag-content__image,
+.bag-content__filter{
+    max-width: 100%;
+}
 .bag__info{
     font: 0.8em OpenSans, sans-serif;
     padding: 13px 0;
